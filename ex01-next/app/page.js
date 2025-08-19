@@ -2,16 +2,20 @@
 //import styles from "./page.module.css";
 
 import { Profile } from "@/components/Profile"
-import { TOdoList } from "@/components/TodoList";
+import { TodoList } from "@/components/TodoList";
+import { Avatar } from "@/components/Avatar";
 
 export default function Home() {
   return (
-    <div>
+    <section>
       <h1>Amazing scientists</h1>
       <Profile />
       <Profile />
       <Profile />
-      <TOdoList />  
-    </div>
+      <hr />
+      <TodoList />
+      <hr />
+      <Avatar />
+    </section>
   );
 }
