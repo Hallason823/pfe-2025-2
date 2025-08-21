@@ -3,7 +3,7 @@ const today = new Date();
 function formatDate(date) {
   return new Intl.DateTimeFormat(
     'en-US',
-    { weekday: 'long' }
+    { weekday: 'long', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZone: 'America/Recife'}
   ).format(date);
 }
 
