@@ -1,10 +1,14 @@
-export function Profile() {
+import { getImageUrl } from "./utils.js";
+
+export function Profile( {person, size} ) {
+    const profile = getImageUrl({person});
     return (
         <img 
-        src="https://i.imgur.com/MK3eW3As.jpg"
-        height={200}
-        wifth={200}
-        alt="Katherine Johnson"
+        className="Profile"
+        src={profile}
+        height={size}
+        wifth={size}
+        alt={person.name}
         />
     );
 }
