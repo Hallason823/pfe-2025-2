@@ -11,4 +11,5 @@ const SingleStyledComponent = styled.div`position: ${(props) => props.position |
 export default function StyledComponent(props) {
   return (<SingleStyledComponent {...props} />);
 }
-export const Button = styled.button`opacity: ${(p) => p.isActive ? "1" : "0.25"};`;
+
+export const Button = styled.button.withConfig({shouldForwardProp: (prop) => prop !== "isactive",})`opacity: ${(p) => (p.isactive ? "1" : "0.25")};`;
