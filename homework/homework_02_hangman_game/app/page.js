@@ -15,7 +15,7 @@ export default function Home() {
       {isLoser && (<p className={`${styles.resultMessage} ${styles.loser}`}>Mission failed! You lost. The word was: <strong>{wordToGuess}</strong></p>)}
       <HangmanDrawing numberOfGuesses={incorrectGuesses.length} />
       <HangmanWord word={wordToGuess} guessedLetters={guessedLetters} />
-      <Keyboard guessedLetters={guessedLetters} disables={isLoser || isWinner} onKeyClick={addGuessedLetter} />
+      <Keyboard guessedLetters={guessedLetters} disabled={isLoser || isWinner} onKeyClick={addGuessedLetter} />
       <button onClick={restartGame} className={styles.restartButton}>Restart Game</button>
     </div>
   );

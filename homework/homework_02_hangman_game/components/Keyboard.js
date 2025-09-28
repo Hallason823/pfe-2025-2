@@ -9,7 +9,7 @@ export default function Keyboard ({ guessedLetters, disabled, onKeyClick }) {
         const isActive = !guessedLetters.includes(letter);
         const isDisabled = disabled || !isActive;
         return (
-          <Button isActive={isActive} key={letter} className={styles.button} disabled={!isActive} disabled={isDisabled} onClick={() => onKeyClick(letter)}>
+          <Button isActive={isActive} key={letter} className={styles.button} disabled={!isActive} onClick={() => onKeyClick(letter)}>
             {letter.toUpperCase()}
           </Button>
         )
