@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { words } from "@/tools/hangmanData";
 
-export function checkGameResult(wordToGuess, guessedLetters, incorrectGuesses) {
+function checkGameResult(wordToGuess, guessedLetters, incorrectGuesses) {
     const isLoser = incorrectGuesses.length >= 6;
     if (!wordToGuess) return {isLoser, isWinner: false};
     const isWinner = wordToGuess.split("").every((letter) => guessedLetters.includes(letter));
