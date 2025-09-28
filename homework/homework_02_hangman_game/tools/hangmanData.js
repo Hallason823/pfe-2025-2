@@ -10,3 +10,14 @@ export const hangmanParts = [{id: 0, name: "top-bar", height: "10px", width: "12
                             {id: 9, name: "right-leg", height: "10px", width: "50px", color: "blue", top: "140px", left: "220px", position: "absolute", rotate: "150deg"}];
 
 export const keys = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i));
+
+export const words = ["APPLE", "REACT", "DEVELOPER", "PYTHON", "JAVASCRIPT", "VARIABLE", "FUNCTION", "OBJECT", "MODULE", "IMPORT",
+                      "EXPORT", "ASYNC", "AWAIT", "PROMISE", "COMPONENT", "STATE", "HOOK", "PACKAGE", "SCRIPT", "SERVER",
+                      "BANANA", "ORANGE", "PINEAPPLE", "MANGO", "PEACH", "CHERRY", "GRAPE", "LEMON", "WATERMELON", "STRAWBERRY",
+                      "PIZZA", "BURGER", "BREAD", "PASTA", "CHEESE", "COFFEE", "TEA", "JUICE", "MILK", "CHOCOLATE",
+                      "TABLE", "CHAIR", "LAMP", "BOTTLE", "PENCIL", "NOTEBOOK", "PHONE", "WINDOW", "DOOR", "CLOCK",
+                      "DOG", "CAT", "BIRD", "FISH", "HORSE", "COW", "SHEEP", "DUCK", "RABBIT", "TIGER",
+                      "SHIRT", "PANTS", "DRESS", "SHOES", "HAT", "JACKET", "SCARF", "GLOVES", "SOCKS", "BELT",
+                      "RED", "BLUE", "GREEN", "YELLOW", "PURPLE", "ORANGE", "BLACK", "WHITE", "PINK", "BROWN",
+                      "SUNNY", "RAIN", "CLOUD", "STORM", "SNOW", "WIND", "TREE", "FLOWER", "MOUNTAIN", "RIVER",
+                      "HOUSE", "CAR", "TRAIN", "PLANE", "BEACH","CANDLE", "MIRROR", "TOOTHBRUSH", "WALLET", "BACKPACK"];
