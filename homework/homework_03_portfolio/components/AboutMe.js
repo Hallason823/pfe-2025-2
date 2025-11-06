@@ -3,7 +3,8 @@ import SectionCard from './SectionCard';
 
 export default function AboutMe() {
   return (
-    <SectionCard title="About Me">
+    <SectionCard>
+      <Typography variant="h5" gutterBottom textAlign="center">About Me</Typography>
       <Typography variant="body1" paragraph sx={{ color: 'text.secondary' }}>
         Full Stack Developer & AI Engineer from Recife-PE, Brazil. Background in Mechanical Engineering (UFPE)
         and Internet Systems (UNICAP). Specializing in scalable applications, NLP models, and cloud infrastructure.

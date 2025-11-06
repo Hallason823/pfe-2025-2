@@ -6,9 +6,9 @@ import { academicExperiences, professionalExperiences } from '@/config/experienc
 export default function ExperiencesPage() {
   return (
     <PageContainer>
-      <PageTitle>Experience</PageTitle>
-      <ExperienceSection title="Academic Experience" data={academicExperiences} titleKey="degree" subtitleKey="institution" />
-      <ExperienceSection title="Professional Experience" data={professionalExperiences} titleKey="title" subtitleKey="company" />
+      <PageTitle>Experiences</PageTitle>
+      <ExperienceSection title="Academic" data={academicExperiences} titleKey="degree" subtitleKey="institution" />
+      <ExperienceSection title="Professional" data={professionalExperiences} titleKey="title" subtitleKey="company" />
     </PageContainer>
   );
 }

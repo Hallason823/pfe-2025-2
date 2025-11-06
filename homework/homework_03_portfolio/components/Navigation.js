@@ -4,10 +4,10 @@ import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, Lis
 import MenuIcon from '@mui/icons-material/Menu';
 
 const pages = [
-  { name: 'Home', path: '/' },
+  { name: 'Home', path: '/home' },
+  { name: 'Experiences', path: '/experiences' },
+  { name: 'Projects', path: '/projects' },
   { name: 'About', path: '/about' },
-  { name: 'Experience', path: '/experience' },
-  { name: 'Projects', path: '/projects' }
 ];
 
 export default function Navigation() {
