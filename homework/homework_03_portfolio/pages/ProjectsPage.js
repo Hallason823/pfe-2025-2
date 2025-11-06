@@ -7,7 +7,7 @@ import LoadingState from '@/components/LoadingState';
 import useGithubRepos from '@/hooks/useGithubRepos';
 
 export default function ProjectsPage() {
-  const { projects, loading } = useGithubRepos('Hallason823', 10);
+  const { projects, loading } = useGithubRepos('Hallason823', 15);
 
   if (loading) return <LoadingState title="Projects" />;
 
