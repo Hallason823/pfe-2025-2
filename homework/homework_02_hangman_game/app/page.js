@@ -6,6 +6,7 @@ import HangmanWord from "@/components/HangmanWord"
 import Keyboard from "@/components/Keyboard"
 import useHangmanGame from "@/hooks/useHangmanGame";
 
+//Link Video youtube: https://youtu.be/aMFwJDkYbrI
 export default function Home() {
   const { wordToGuess, guessedLetters, incorrectGuesses, addGuessedLetter, isLoser, isWinner, restartGame } = useHangmanGame();
   return (
