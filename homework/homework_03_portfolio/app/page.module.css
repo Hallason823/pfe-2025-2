@@ -17,6 +17,19 @@
   background-color: var(--background);
 }
 
+.avatar {
+  display: inline‑block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;          
+  object-fit: cover; 
+  border: 2px solid #fff;     
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
 .main {
   display: flex;
   min-height: 100vh;
